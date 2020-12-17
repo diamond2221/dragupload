@@ -1,0 +1,67 @@
+/* Variables */
+:root {
+  --primary-shadow-color: rgba(45, 140, 240, .2);
+  --primary-color: #0079fe;
+  --main-color: #409EFF;
+
+  --subMenuActiveText: var(--main-color);
+  --menuActiveText: var(--main-color);
+  --menuActiveBackground: #e6f6ff;
+  --mainBgColor: var(--main-color);
+  --mainDarkColor: var(--primary-color);
+  --mainDarkBgColor: var(--primary-color);
+  --large-size: 16px;
+  --default-size: 12px;
+  --small-size: 12px;
+}
+
+// Base Size
+@largeSize: var(--large-size);
+@defaultSize: var(--default-size);
+@smallSize: var(--small-size);
+
+// Base color
+@blue: #324157;
+@light-blue: #3A71A8;
+@red: #C03639;
+@pink: #E65D6E;
+@green: #30B08F;
+@tiffany: #4AB7BD;
+@yellow: #FEC171;
+@panGreen: #30B08F;
+
+// Sidebar
+@sideBarWidth: 210px;
+@subMenuBg: #fefefe;
+@subMenuHover: #001528;
+@subMenuActiveText: var(--subMenuActiveText);
+@menuBg: #304156;
+@menuText: #bfcbd9;
+@menuActiveText: var(--menuActiveText); // Also see settings.sidebarTextTheme
+@mainColor: var(--main-color);
+@mainBgColor: var(--mainBgColor);
+@mainDarkColor: var(--mainDarkColor);
+@mainDarkBgColor: var(--mainDarkBgColor);
+@primary-color: --var(--primary-color);
+
+// Login page
+@lightGray: #eee;
+@darkGray: #889aa4;
+@loginBg: #2d3a4b;
+@loginCursorColor: #fff;
+
+// The :export directive is the magic sauce for webpack
+// https://mattferderer.com/use-sass-variables-in-typescript-and-javascript
+:export {
+  menuBg: @menuBg;
+  menuText: @menuText;
+  menuActiveText: @menuActiveText;
+  loginBg: @loginBg;
+  mainColor: @mainColor;
+  mainBgColor: @mainBgColor;
+  mainDarkColor: @mainDarkColor;
+  mainDarkBgColor: @mainDarkBgColor;
+  largeSize: @largeSize;
+  defaultSize: @defaultSize;
+  smallSize: @smallSize;
+}

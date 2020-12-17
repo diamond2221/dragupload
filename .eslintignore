@@ -1,0 +1,5 @@
+dist/*.js
+src/assets
+tests/unit/coverage
+public/**/*.js
+node_modules/**
